@@ -33,6 +33,11 @@ public class CartCalculatorTest {
                         "Client pro CA > 10M",
                         new ClientProfessionnel("3", "BigCorp", null, "987654321", 15_000_000),
                         1000 + 2 * 550 + 900  // = 3000
+                ),
+                new TestCase(
+                        "Client pro CA = 10M",
+                        new ClientProfessionnel("4", "Moyenne", "FR987", "456789123", 10_000_000),
+                        1000 + 2 * 550 + 900  // = 3000
                 )
         );
     }
