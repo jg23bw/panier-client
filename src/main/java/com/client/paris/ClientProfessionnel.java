@@ -16,7 +16,7 @@ public class ClientProfessionnel extends Client {
 
     @Override
     public double getUnitPrice(ProductType type) {
-        boolean grosClient = chiffreAffaire > 10_000_000;
+        boolean grosClient = chiffreAffaire >= 10_000_000;
         return switch (type) {
             case TEL_HAUT_DE_GAMME -> grosClient ? 1000 : 1150;
             case TEL_MOYENNE_GAMME -> grosClient ? 550 : 600;
